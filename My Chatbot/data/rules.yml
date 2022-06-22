@@ -1,0 +1,18 @@
+version: "3.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Tell the Time
+  steps:
+  - intent: inquire_time
+  - action: action_tell_time
+
+- rule: Tell about country
+  steps:
+  - intent: inquire_country
+  - action: action_tell_about_country

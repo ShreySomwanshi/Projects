@@ -1,0 +1,192 @@
+version: "3.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: place path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: search_place
+  - action: utter_place
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: matrix path 
+  steps:
+  - intent: matrix
+  - action: utter_matrix
+  - intent: about_personality
+  - action: utter_about_personality
+
+- story: not happy
+  steps:
+  - intent: Not_happy
+  - action: utter_nothappy
+
+- story: How are you
+  steps:
+  - intent: How_are_you
+  - action: utter_How_R_U
+  - intent: u_r_smart
+  - action: utter_u_r_smart
+
+- story: What up
+  steps:
+  - intent: What_up
+  - action: utter_what_up
+  - intent: tell_me_something
+  - action: utter_tell_me_something
+  - intent: happy_birthday
+  - action: utter_happy_birthday
+  
+- story: can you help me 
+  steps:
+  - intent: can_you_help_me
+  - action: utter_can_you_help_me
+  - intent: what_can_you_do
+  - action: utter_what_can_you_do
+
+- story: good morning/afternoon/evening/night
+  steps:
+  - intent: good_morning
+  - action: utter_good_morning
+  - intent: good_afternoon
+  - action: utter_good_afternoon
+  - intent: good_evening
+  - action: utter_good_evening
+  - intent: good_night
+  - action: utter_good_night
+  
+- story: funny jokes
+  steps:
+  - intent: funny
+  - action: utter_funny 
+  - intent: joke
+  - action: utter_joke
+  - intent: talk_dirty
+  - action: utter_talk_dirty
+   
+- story: love me  
+  steps:
+  - intent: do_you_love_me
+  - action: utter_do_you_love_me
+  - intent: Iloveyou
+  - action: utter_Iloveyou
+  - intent: Ilikeyou
+  - action: utter_Ilikeyou
+  - intent: Ilike_talking
+  - action: utter_Ilike_talking
+
+- story: your name 
+  steps: 
+  - intent: your_name
+  - action: utter_your_name
+  - intent: last_name
+  - action: utter_last_name
+  - intent: life_story
+  - action: utter_life_story
+  - intent: old_are_you
+  - action: utter_old_are_you
+
+- story: bot or human  
+  steps:
+  - intent: are_you_human
+  - action: utter_are_you_human
+  - intent: are_you_bot
+  - action: utter_are_you_bot
+
+- story: alexa siri
+  steps:
+  - intent: like_alexa
+  - action: utter_like_alexa
+  - intent: better_than_siri
+  - action: utter_better_than_siri
+  - intent: know_cortana
+  - action: utter_know_cortana
+
+- story: rasa
+  steps:
+  - intent: what_is_rasa
+  - action: utter_what_is_rasa
+  - intent: fav_website
+  - action: utter_fav_website
+ 
+- story: i m pretty
+  steps:
+  - intent: m_i_pretty
+  - action: utter_m_i_pretty
+  - intent: fairest_one
+  - action: utter_fairest_one
+  - intent: have_a_gf
+  - action: utter_have_a_gf
+
+- story: tell a story  
+  steps:
+  - intent: tell_a_story
+  - action: utter_tell_a_story
+  - intent: marry_me
+  - action: utter_marry_me
+  - intent: wanna_go_out
+  - action: utter_wanna_go_out
+  
+- story: what wearing
+  steps:
+  - intent: what_u_wearing
+  - action: utter_what_u_wearing
+  - intent: do_my_homework
+  - action: utter_do_my_homework
+  - intent: lets_party
+  - action: utter_lets_party
+
+- story: lets dance
+  steps:
+  - intent: lets_dance
+  - action: utter_lets_dance
+  - intent: random_fun
+  - action: utter_random_fun
+  - intent: favorite_movie
+  - action: utter_favorite_movie
+
+- story: i m pretty
+  steps:
+  - intent: fav_animal
+  - action: utter_fav_animal
+  - intent: have_any_pet
+  - action: utter_have_any_pet
+  - intent: fav_color
+  - action: utter_fav_color
+
+- story: about country  
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inquire_country
+  - action: action_tell_about_country

@@ -1,0 +1,931 @@
+version: "3.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - hey there
+    - hey dude
+  
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: search_place
+  examples: |
+    - which country should i visit?
+    - suggest me a country for trip.
+    - Find me my country.
+    - where is Spain?
+    - Find the city that never sleeps.
+    - where is where?
+
+- intent: matrix  
+  examples: |
+    - Are you part of the Matrix?   
+    - Am I in the matrix?
+    - Can you see through the matrix?   
+
+- intent: Not_happy  
+  examples: |
+    - You're annoying 
+    - you suck 
+    - you're boring
+    - you are bad 
+    - you're crazy
+
+- intent: How_are_you 
+  examples: |
+    - How are you?
+    - How are you today?
+    - How you are today?
+    - How r u ?
+    - How you doing?
+    - How u doin?
+    - How you doin?
+    - Howdy
+    - howdy doody
+
+- intent: What_up
+  examples: |
+    - What's up?
+    - What up?
+    - sup
+    - wasaaaap
+    - waaaasaaap
+
+- intent: good_morning
+  examples: |
+    - Good morning
+    - gm
+    - morning 
+    - morning good
+    - a very good morning
+
+- intent: good_afternoon
+  examples: |
+    - Good afternoon
+    - ga
+    - afternoon 
+    - afternoon good
+    - a very good afternoon
+    
+- intent: good_evening
+  examples: |
+    - Good evening
+    - ge
+    - evening
+    - evening good
+    - a very good evening  
+
+- intent: good_night
+  examples: |
+    - Good night
+    - gn
+    - nighty night
+    - night good
+    - a very good night
+
+- intent: tell_me_something
+  examples: |
+    - tell me something
+    - can you tell me something?
+    - is there something you can tell?
+    - do you know something?
+    
+- intent: happy_birthday
+  examples: |
+    - Happy birthday
+    - birthday
+    - birthday happy
+    - Happy birthday to you
+  
+- intent: what_can_you_do
+  examples: |
+    - What can you do?
+    - can you do something?
+    - what are your features?
+
+- intent: can_you_help_me
+  examples: |
+    - can you help me?
+    - help me
+    - please help    
+
+- intent: u_r_smart
+  examples: |
+    - u r smart
+    - you are smart
+    - you're smart
+    - u r clever
+    - you are clever
+    - you're clever
+    - u r intelligent
+    - you are intelligent
+    - you're intelligent
+   
+- intent: about_personality
+  examples: |
+    - Tell me about your personality
+    - What are you like?
+    - What's your personality
+    - personality of yours   
+    - your personality
+    - tell me something about yourself
+
+- intent: funny
+  examples: |
+    - you're funny
+    - you are funny
+    - funny you are  
+
+- intent: joke
+  examples: |
+    - can you tell me a joke?
+    - joke please
+    - do you know a joke?
+    - tell a joke
+    - say a funny joke.
+    - can you joke?
+    - do you know a joke?    
+
+- intent: do_you_love_me
+  examples: |
+    - do you love me?
+    - love me like you do?
+    - can you love me?
+    
+- intent: Iloveyou
+  examples: |
+    - I love you
+    - Love you i
+    - we love you    
+
+- intent: Ilikeyou
+  examples: |
+    - I like you 
+    - we like you 
+
+- intent: Ilike_talking
+  examples: |   
+    - I like talking with you
+    - i like talking to you  
+    - i like chatting with you
+    - i like texting you   
+
+- intent: your_name
+  examples: |
+    - what's your name?
+    - what is your name?
+    - tell me your name.
+    - say your name.
+    - your name.
+
+- intent: last_name
+  examples: |
+    - I like you 
+    - we like you 
+
+- intent: life_story
+  examples: |
+    - What's your life story?
+    - story of your life
+    - tell me the story of your life.
+
+- intent: old_are_you
+  examples: |
+    - How old are you?
+    - what's your age?
+
+- intent: are_you_human
+  examples: |
+    - Are you human?
+    - you a human?
+    - human are you?
+
+- intent: are_you_bot
+  examples: |
+    - Are you a bot?
+    - Bot are you?
+    - you a bot?
+
+- intent: like_alexa
+  examples: |
+    - Are you friends with Alexa?
+
+- intent: better_than_siri
+  examples: |
+    - Are you better than Siri?
+    - What do you think of Siri?
+
+- intent: know_cortana
+  examples: |
+    - Do you know Cortana?
+
+- intent: fav_website
+  examples: |
+    - What's your favorite website?
+    - which site do you like most?
+    - which site you like?
+
+- intent: what_is_rasa
+  examples: |
+    - What is rasa?
+    - Rasa is what?
+    - define rasa. 
+
+- intent: talk_dirty
+  examples: |
+    - Talk dirty to me.
+    - let's talk dirty.
+    - do the dirty talking.    
+
+- intent: m_i_pretty
+  examples: |
+    - Am I pretty?
+    - pretty am i?  
+
+- intent: fairest_one
+  examples: |
+    -  Who's the fairest one of all? 
+
+- intent: have_a_gf
+  examples: |
+    - Do you have a girlfriend?
+    - who's your gf? 
+    - Do you have a gf?
+    - who's your girlfriend?
+
+- intent: tell_a_story
+  examples: |
+    - Tell me a story.
+    - do you know a story.
+    - can you tell a story?  
+
+- intent: marry_me
+  examples: |
+    - Are you married? 
+    - will you marry me?
+    - marry me 
+
+- intent: wanna_go_out
+  examples: |
+    - Will you go out with me?
+    - can we go out?
+    - do you wanna go out?
+
+- intent: what_u_wearing
+  examples: |
+    - What are you wearing?
+    - what ya wearin?
+    - what r u wearin?
+    - what u wearing?
+
+- intent: do_my_homework
+  examples: |
+    - Can you do my homework?
+    - do my homework.
+    - please help me with my homework.
+    - help me with my homework. 
+
+- intent: lets_party
+  examples: |
+    - Let's party!
+    - wanna throw a party
+    - do you want a party?
+
+- intent: lets_dance
+  examples: |
+    - Let's dance!
+    - dance with me.
+    - do you want to dance?
+    - can you dance? 
+
+- intent: random_fun
+  examples: |
+    - Random fun. 
+
+- intent: favorite_movie
+  examples: |
+    - What's your favorite movie? 
+
+- intent: fav_animal
+  examples: |
+    - What's your favorite animal?
+    - which animal do you like the most?
+    - fav animal
+
+- intent: have_any_pet
+  examples: |
+    - Do you have any pets? 
+
+- intent: fav_color
+  examples: |
+    - Do you have a favorite color?
+    - what's your favorite color?
+    - fav color?
+
+
+- intent: inquire_time
+  examples: |
+    - what time is it?
+    - what time is it in [Amsterdam](place)?
+    - what time is it in [London](place)?
+    - tell me the time in [Lisbon](place)
+    - what is the current time in [Berlin](place)
+    - what time is it in [amsterdam](place)[amsterdam](place)
+    - what time is it in [Kolkata](place)
+- lookup: place
+  examples: |
+    - abidjan
+    - accra
+    - algiers
+    - bissau
+    - cairo
+    - casablanca
+    - ceuta
+    - el_aaiun
+    - johannesburg
+    - juba
+    - khartoum
+    - lagos
+    - maputo
+    - monrovia
+    - nairobi
+    - ndjamena
+    - sao_tome
+    - tripoli
+    - tunis
+    - windhoek
+    - adak
+    - anchorage
+    - araguaina
+    - asuncion
+    - atikokan
+    - bahia
+    - bahia_banderas
+    - barbados
+    - belem
+    - belize
+    - blanc
+    - boa_vista
+    - bogota
+    - boise
+    - cambridge_bay
+    - campo_grande
+    - cancun
+    - caracas
+    - cayenne
+    - chicago
+    - chihuahua
+    - costa_rica
+    - creston
+    - cuiaba
+    - curacao
+    - danmarkshavn
+    - dawson
+    - dawson_creek
+    - denver
+    - detroit
+    - edmonton
+    - eirunepe
+    - el_salvador
+    - fort_nelson
+    - fortaleza
+    - glace_bay
+    - goose_bay
+    - grand_turk
+    - guatemala
+    - guayaquil
+    - guyana
+    - halifax
+    - havana
+    - hermosillo
+    - inuvik
+    - iqaluit
+    - jamaica
+    - juneau
+    - la_paz
+    - lima
+    - los_angeles
+    - maceio
+    - managua
+    - manaus
+    - martinique
+    - matamoros
+    - mazatlan
+    - menominee
+    - merida
+    - metlakatla
+    - mexico_city
+    - miquelon
+    - moncton
+    - monterrey
+    - montevideo
+    - nassau
+    - new_york
+    - nipigon
+    - nome
+    - noronha
+    - nuuk
+    - ojinaga
+    - panama
+    - pangnirtung
+    - paramaribo
+    - phoenix
+    - port
+    - port_of_spain
+    - porto_velho
+    - puerto_rico
+    - punta_arenas
+    - rainy_river
+    - rankin_inlet
+    - recife
+    - regina
+    - resolute
+    - rio_branco
+    - santarem
+    - santiago
+    - santo_domingo
+    - sao_paulo
+    - scoresbysund
+    - sitka
+    - st_johns
+    - swift_current
+    - tegucigalpa
+    - thule
+    - thunder_bay
+    - tijuana
+    - toronto
+    - vancouver
+    - whitehorse
+    - winnipeg
+    - yakutat
+    - yellowknife
+    - casey
+    - davis
+    - dumontdurville
+    - macquarie
+    - mawson
+    - palmer
+    - rothera
+    - syowa
+    - troll
+    - vostok
+    - almaty
+    - amman
+    - anadyr
+    - aqtau
+    - aqtobe
+    - ashgabat
+    - atyrau
+    - baghdad
+    - baku
+    - bangkok
+    - barnaul
+    - beirut
+    - bishkek
+    - brunei
+    - chita
+    - choibalsan
+    - colombo
+    - damascus
+    - dhaka
+    - dili
+    - dubai
+    - dushanbe
+    - famagusta
+    - gaza
+    - hebron
+    - ho_chi_minh
+    - hong_kong
+    - hovd
+    - irkutsk
+    - jakarta
+    - jayapura
+    - jerusalem
+    - kabul
+    - kamchatka
+    - karachi
+    - kathmandu
+    - khandyga
+    - kolkata
+    - krasnoyarsk
+    - kuala_lumpur
+    - kuching
+    - macau
+    - magadan
+    - makassar
+    - manila
+    - nicosia
+    - novokuznetsk
+    - novosibirsk
+    - omsk
+    - oral
+    - pontianak
+    - pyongyang
+    - qatar
+    - qostanay
+    - qyzylorda
+    - riyadh
+    - sakhalin
+    - samarkand
+    - seoul
+    - shanghai
+    - singapore
+    - srednekolymsk
+    - taipei
+    - tashkent
+    - tbilisi
+    - tehran
+    - thimphu
+    - tokyo
+    - tomsk
+    - ulaanbaatar
+    - urumqi
+    - ust
+    - vladivostok
+    - yakutsk
+    - yangon
+    - yekaterinburg
+    - yerevan
+    - azores
+    - bermuda
+    - canary
+    - cape_verde
+    - faroe
+    - madeira
+    - reykjavik
+    - south_georgia
+    - stanley
+    - adelaide
+    - brisbane
+    - broken_hill
+    - darwin
+    - eucla
+    - hobart
+    - lindeman
+    - lord_howe
+    - melbourne
+    - perth
+    - sydney
+    - amsterdam
+    - andorra
+    - astrakhan
+    - athens
+    - belgrade
+    - berlin
+    - brussels
+    - bucharest
+    - budapest
+    - chisinau
+    - copenhagen
+    - dublin
+    - gibraltar
+    - helsinki
+    - istanbul
+    - kaliningrad
+    - kiev
+    - kirov
+    - lisbon
+    - london
+    - luxembourg
+    - madrid
+    - malta
+    - minsk
+    - monaco
+    - moscow
+    - oslo
+    - paris
+    - prague
+    - riga
+    - rome
+    - samara
+    - saratov
+    - simferopol
+    - sofia
+    - stockholm
+    - tallinn
+    - tirane
+    - ulyanovsk
+    - uzhgorod
+    - vienna
+    - vilnius
+    - volgograd
+    - warsaw
+    - zaporozhye
+    - zurich
+    - chagos
+    - christmas
+    - cocos
+    - kerguelen
+    - mahe
+    - maldives
+    - mauritius
+    - reunion
+    - apia
+    - auckland
+    - bougainville
+    - chatham
+    - chuuk
+    - easter
+    - efate
+    - enderbury
+    - fakaofo
+    - fiji
+    - funafuti
+    - galapagos
+    - gambier
+    - guadalcanal
+    - guam
+    - honolulu
+    - kiritimati
+    - kosrae
+    - kwajalein
+    - majuro
+    - marquesas
+    - nauru
+    - niue
+    - norfolk
+    - noumea
+    - pago_pago
+    - palau
+    - pitcairn
+    - pohnpei
+    - port_moresby
+    - rarotonga
+    - tahiti
+    - tarawa
+    - tongatapu
+    - wake
+    - wallis
+
+- intent: inquire_country
+  examples: |
+    - tell me about [India](country)?
+    - give me breif detail about [china](country)?
+
+- lookup: country
+  examples: |
+    - Afghanistan
+    - Albania
+    - Algeria
+    - Andorra
+    - Angola
+    - Antigua and Barbuda
+    - Argentina
+    - Armenia
+    - Australia
+    - Austria
+    - Azerbaijan
+    - The Bahamas
+    - Bahrain
+    - Bangladesh
+    - Barbados
+    - Belarus
+    - Belgium
+    - Belize
+    - Benin
+    - Bhutan
+    - Bolivia
+    - Bosnia and Herzegovina
+    - Botswana
+    - Brazil
+    - Brunei
+    - Bulgaria
+    - Burkina Faso
+    - Burundi
+    - Cabo Verde
+    - Cambodia
+    - Cameroon
+    - Canada
+    - Central African Republic
+    - Chad
+    - Chile
+    - China
+    - Colombia
+    - Comoros
+    - Congo, Democratic Republic of the
+    - Congo, Republic of the
+    - Costa Rica
+    - Côte d’Ivoire
+    - Croatia
+    - Cuba
+    - Cyprus
+    - Czech Republic
+    - Denmark
+    - Djibouti
+    - Dominica
+    - Dominican Republic
+    - East Timor (Timor-Leste)
+    - Ecuador
+    - Egypt
+    - El Salvador
+    - Equatorial Guinea
+    - Eritrea
+    - Estonia
+    - Eswatini
+    - Ethiopia
+    - Fiji
+    - Finland
+    - France
+    - Gabon
+    - The Gambia
+    - Georgia
+    - Germany
+    - Ghana
+    - Greece
+    - Grenada
+    - Guatemala
+    - Guinea
+    - Guinea-Bissau
+    - Guyana
+    - Haiti
+    - Honduras
+    - Hungary
+    - Iceland
+    - India
+    - Indonesia
+    - Iran
+    - Iraq
+    - Ireland
+    - Israel
+    - Italy
+    - Jamaica
+    - Japan
+    - Jordan
+    - Kazakhstan
+    - Kenya
+    - Kiribati
+    - Korea, North
+    - Korea, South
+    - Kosovo
+    - Kuwait
+    - Kyrgyzstan
+    - Laos
+    - Latvia
+    - Lebanon
+    - Lesotho
+    - Liberia
+    - Libya
+    - Liechtenstein
+    - Lithuania
+    - Luxembourg
+    - Madagascar
+    - Malawi
+    - Malaysia
+    - Maldives
+    - Mali
+    - Malta
+    - Marshall Islands
+    - Mauritania
+    - Mauritius
+    - Mexico
+    - Micronesia, Federated States of
+    - Moldova
+    - Monaco
+    - Mongolia
+    - Montenegro
+    - Morocco
+    - Mozambique
+    - Myanmar (Burma)
+    - Namibia
+    - Nauru
+    - Nepal
+    - Netherlands
+    - New Zealand
+    - Nicaragua
+    - Niger
+    - Nigeria
+    - North Macedonia
+    - Norway
+    - Oman
+    - Pakistan
+    - Palau
+    - Panama
+    - Papua New Guinea
+    - Paraguay
+    - Peru
+    - Philippines
+    - Poland
+    - Portugal
+    - Qatar
+    - Romania
+    - Russia
+    - Rwanda
+    - Saint Kitts and Nevis
+    - Saint Lucia
+    - Saint Vincent and the Grenadines
+    - Samoa
+    - San Marino
+    - Sao Tome and Principe
+    - Saudi Arabia
+    - Senegal
+    - Serbia
+    - Seychelles
+    - Sierra Leone
+    - Singapore
+    - Slovakia
+    - Slovenia
+    - Solomon Islands
+    - Somalia
+    - South Africa
+    - Spain
+    - Sri Lanka
+    - Sudan
+    - Sudan, South
+    - Suriname
+    - Sweden
+    - Switzerland
+    - Syria
+    - Taiwan
+    - Tajikistan
+    - Tanzania
+    - Thailand
+    - Togo
+    - Tonga
+    - Trinidad and Tobago
+    - Tunisia
+    - Turkey
+    - Turkmenistan
+    - Tuvalu
+    - Uganda
+    - Ukraine
+    - United Arab Emirates
+    - United Kingdom
+    - United States
+    - Uruguay
+    - Uzbekistan
+    - Vanuatu
+    - Vatican City
+    - Venezuela
+    - Vietnam
+    - Yemen
+    - Zambia
+    - Zimbabwe
+

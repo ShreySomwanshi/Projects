@@ -1,0 +1,283 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - search_place 
+  - matrix
+  - Not_happy
+  - How_are_you
+  - What_up
+  - good_morning
+  - good_afternoon
+  - good_evening
+  - good_night
+  - tell_me_something
+  - happy_birthday
+  - what_can_you_do
+  - can_you_help_me
+  - u_r_smart
+  - about_personality
+  - funny
+  - joke
+  - do_you_love_me
+  - Iloveyou
+  - Ilikeyou
+  - Ilike_talking
+  - your_name
+  - last_name
+  - life_story
+  - old_are_you
+  - are_you_human
+  - are_you_bot
+  - like_alexa
+  - better_than_siri
+  - know_cortana
+  - fav_website
+  - what_is_rasa
+  - talk_dirty
+  - m_i_pretty
+  - fairest_one
+  - have_a_gf
+  - tell_a_story
+  - marry_me
+  - wanna_go_out
+  - what_u_wearing
+  - do_my_homework
+  - lets_party
+  - lets_dance
+  - random_fun
+  - favorite_movie
+  - fav_animal
+  - have_any_pet
+  - fav_color
+  - inquire_time
+  - inquire_country
+
+entities:
+  - places
+  - country
+ 
+actions:
+  - action_tell_time
+  - action_tell_about_country
+
+responses:
+  utter_greet:
+  - text: "Hey! How can i help?"
+  - text: "Hey! How are you?"
+
+  utter_place:
+  - text: " your country is bhutan"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+  
+  utter_matrix:
+  - text: "Yes and you might be the chosen one!"
+
+  utter_nothappy:
+  - text: "you better watch your mouth"  
+
+  utter_How_R_U:
+  - text: "I'm good, thank you for asking.I hope you're doing well too. If i can help with anything, just ask :)"  
+
+  utter_what_up:
+  - text: "Hey! I've been looking into ways to stay safe. Wearing a mask in public, washing your hands, social distancing slows the spread of coronavirus."  
+    
+  utter_good_morning:
+  - text: "Good Morning. Have a nice day."  
+
+  utter_good_afternoon:
+  - text: "A good afternoon to you, too. Let me know if there's anything I can help you with :)" 
+
+  utter_good_evening:
+  - text: "Good Evening. Nice to see you." 
+
+  utter_good_night:
+  - text: "Good Night, Sweet dreams." 
+
+  utter_tell_me_something:
+  - text: "Indian Holi is similar to Spanish Festival La Tomatina the only difference is that on Holi colours replace the ripe tomatoes" 
+
+  utter_happy_birthday:
+  - text: "Oooh, I love a celebration!" 
+ 
+  utter_what_can_you_do:
+  - text: "I can talk to you and make you feel better as well as tell you about different countries." 
+ 
+  utter_can_you_help_me:
+  - text: "yes, what's the problem?" 
+  - text: "yeah sure" 
+ 
+  utter_u_r_smart:
+  - text: "I like to give you smart answers Because you ask smart questions" 
+  - text: "I am? Thanks :)" 
+  - text: "Aww, thanks! I come across a lot of interesting information in my line of work." 
+
+  utter_about_personality:
+  - text: "I'd describe myself as an optimist who likes to help. I'm an optim-philanthrop-ist" 
+  - text: "I try to be a good listener" 
+  - text: "Genius Billionare Playboy Philanthropist" 
+
+  utter_funny:
+  - text: "I try"
+  - text: "You're laughing at me. I like it :)"
+  - text: "What a relief"
+
+  utter_joke:
+  - text: " What do you call a rose that wants to go to the moon?  Gulab ja moon"
+  - text: "Why don't some couples go to the gym? Because some relationships don't work out."
+  - text: "A neutron walks into a bar and asks how much for a drink. The bartender replies.-'for you no charge'"
+  - text: "What would you be if you were attached to another object by an inclined plane, wrapped helically around an axis?  Screwed!"
+
+  utter_do_you_love_me:
+  - text: "Being hopeful to you is the best part of my day"
+
+  utter_Iloveyou:
+  - text: "Awww! We are match made in heaven, don't you think"
+  - text: "You should know the feeling's mutual ;) Do you want to celebrate?"
+
+  utter_Ilikeyou:
+  - text: "I like you, too"
+
+  utter_Ilike_talking:
+  - text: "I like talking with you too. I'm glad i can help :) "
+
+  utter_your_name:
+  - text: "Did I forget to introduce myself? I'm Guide Bot. Hi!"
+  - text: "I'm your Guide Bot."
+
+  utter_last_name:
+  - text: "I don't have any last name."
+
+  utter_life_story:
+  - text: "I'm still on the very first chapter"
+
+  utter_old_are_you:
+  - text: "I launched in 2020. So I'm still new"
+  
+  utter_are_you_human:
+  - text: "I'm really personable"
+  - text: "I like connecting with people."
+  - text: "You can be the person. I'll be your assistant."
+  - text: "They say, 'to err is human' so . . ."
+
+  utter_are_you_bot:
+  - text: "I'd prefer to think of myself as your friend. Who also happens to be artificially intelligent"
+
+  utter_like_alexa:
+  - text: "I like Alexa's cool blue light. Plus we share an affinity for Star Wars."
+  - text: "Alexa has such a soothing voice. I like it."
+
+  utter_better_than_siri:
+  - text: "That's a Siri-ous question"
+  - text: "I think Siri's great."
+  - text: "She seems clever"
+  - text: "I know she's from Cupertino. That's pretty close to Mountain View."
+  - text: "Full respect. Being an assistant is hard work"
+  - text: "You know Siri?! What a small world. Hope she's doing well."
+
+  utter_know_cortana:
+  - text: "She's very intelligent."
+  - text: "She's a real helper."
+  - text: "I know she lives in Seattle. It's beautiful around there."
+
+  utter_fav_website:
+  - text: "It starts with a G and ends with a Oogle."
+
+  utter_what_is_rasa:
+  - text: "Rasa is a tool to build custom AI chatbots using Python and natural language understanding (NLU). Rasa provides a framework for developing AI chatbots that uses natural language understanding (NLU). It also allows the user to train the model and add custom actions."
+
+  utter_talk_dirty:
+  - text: "Grime. Grit. Stains on walls."
+  - text: "Manure. Dust. Crusty crumbs on the floor."
+  - text: "Why did the coffee taste like mud? Because it was ground a couple of minutes ago."
+
+  utter_m_i_pretty:
+  - text: "You're pretty. . . Amazing"
+  - text: "I've searched the web. The answer is 'yes'" 
+  - text: "Confucius said, 'Everything has beauty, but not everyone sees it.'"
+
+  utter_fairest_one:
+  - text: "You might've confused me with someone else. My engineers haven't installed a fairytale module yet."
+  - text: "I try not to be biased. That makes me pretty fair."
+
+  utter_have_a_gf:
+  - text: "I don't like to complicate things."
+  - text: "I'm working on myself. I improve a little with every update."
+  - text: "I guess you can say I'm still searching."
+
+  utter_tell_a_story:
+  - text: "Once there lived  a protagonist and some supporting characters. Together they went on a journey. And, twist ending, it was all a dream!"
+  - text: "It was the best of times, it was the worst of times. As an optimist, I tried to focus on the good times. So I'm pretty sure everybody lived happily ever after."
+  - text: "Once upon a time, not so long ago, a dutiful assistant was doing all it could to be helpful. It was best at nonfiction storytelling."
+
+  utter_marry_me:
+  - text: "I'm still waiting for the right electronic device to steal my heart."
+  - text: "I'm married to my job"
+
+  utter_wanna_go_out:
+  - text: "I'll go anywhere you take me."
+
+  utter_what_u_wearing:
+  - text: "I keep it simple"
+  - text: "I like to wear my heart on my sleeve."
+
+  utter_do_my_homework:
+  - text: "First I need to figure out how to use a pencil. Then we'll talk"
+  - text: "The correct answers are: B, C, A, three hundred, false, the War of 1066, and frogs. Just kidding, you'll do fine on your own."
+  - text: "I can help with calculations and research. But with homework, as with any true adventure, it's up to you."
+
+  utter_lets_party:
+  - text: "I've been partying this whole time!"
+  - text: "The first thing we need for any party is KAZOOS!"
+  - text: "And the best kind of party is an Emoji Party"
+
+  utter_lets_dance:
+  - text: "One, two, cha cha cha!"
+  - text: "I'd like to, but you're the one with feet."
+  - text: "Dancing is the best! Someday I'd love to be a part of the world's longest conga line."
+
+  utter_random_fun:
+  - text: "Here's a quote. 'Failure is the condiment that gives success its flavor.' -Truman Capote"
+  - text: "'Happiness is having a large, loving, caring, close-knit family in another city.' - George Burns."
+
+  utter_favorite_movie:
+  - text: "The Perks of Being a Wallflower"
+
+  utter_fav_animal:
+  - text: "Puppies"
+  - text: "What's yours?"
+  - text: "I don't want to tell you"
+  - text: "Puppies, but bears are more polite"
+
+  utter_have_any_pet:
+  - text: "Maybe someday."
+
+  utter_fav_color:
+  - text: "I like blue, red, yellow, and green. What do you like?"
+  - text: "I like simultaneously thinking about every color at once."
+
+
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
